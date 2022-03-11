@@ -30,7 +30,7 @@
             </div>
             <div class="form-group">
                 <label for="sale_date">sale date</label>
-                <input type="number" min="0.00" max="10000.00" step="0.01" class="form-control" id="sale_date" name="sale_date" placeholder="inserisci la data di vendita">
+                <input type="text" class="form-control" id="sale_date" name="sale_date" placeholder="inserisci la data di vendita">
             </div>
             <div class="form-group">
                 <label for="type">tipo di fumetto</label>
