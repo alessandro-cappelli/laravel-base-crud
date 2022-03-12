@@ -1,7 +1,9 @@
 @extends('layouts.base')
 
 @section('content')
+
     <div class="container">
+        <a href="{{route("comics.create")}}"><button type="button" class="btn-success">Aggiungi</button></a>
         <table class="table">
             <thead>
                 <tr>

@@ -7,7 +7,7 @@
         <h1>Aggiungi Fumetto</h1>
         
         <form action="{{route("comics.store")}}" method="POST">
-            @csrf
+            {{-- @csrf --}}
             <div class="form-group">
                 <label for="title">title</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="inserisci il titolo del fumetto">
@@ -38,6 +38,9 @@
                     <option value="comic_book">comic book</option>
                     <option value="graphic_novel">graphic nobel</option>
                 </select>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Crea</button>
             </div>
         </form>
     </div>
