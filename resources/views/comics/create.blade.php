@@ -14,7 +14,7 @@
             </div>
             <div class="form-group">
                 <label for="description">description</label>
-                <input type="textarea" class="form-control" id="description" name="description" placeholder="inserisci la descrizione del fumetto">
+                <textarea class="form-control" id="description" name="description" placeholder="inserisci la descrizione del fumetto"></textarea>
             </div>
             <div class="form-group">
                 <label for="thumb">thumb</label>
