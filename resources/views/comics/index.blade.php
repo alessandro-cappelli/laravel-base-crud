@@ -30,7 +30,6 @@
                             <a href="{{route('comics.show', $comic->id)}}"><button type="button" class="btn btn-primary">vedi</button></a>
                             <a href="{{route('comics.edit', $comic->id)}}"><button type="button" class="btn btn-warning">edit</button></a>
                         </th>
-
                     </tr>
                 @endforeach
             </tbody>

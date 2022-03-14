@@ -10,7 +10,7 @@
 
             @csrf
             @method('PUT')
-            
+
             <div class="form-group">
                 <label for="title">title</label>
                 <input type="text" class="form-control" id="title" name="title" value="{{$comic->title}}" placeholder="inserisci il titolo del fumetto">
@@ -43,7 +43,7 @@
                 </select>
             </div>
             <div>
-                <button type="submit" class="btn btn-primary">Crea</button>
+                <button type="submit" class="btn btn-primary">Salva</button>
             </div>
         </form>
     </div>

@@ -85,9 +85,24 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+
+        $comic = new Comic();
+        $comic->title=$data["title"];
+        $comic->description=$data["description"];
+        if(!empty($data["thumb"])){
+            $comic->thumb = $data["thumb"];
+        }
+        $comic->price=$data["price"];
+        $comic->series=$data["series"];
+        $comic->sale_date=$data["sale_date"];
+        $comic->type=$data["type"];
+
+        $comic->save();
+
+        return redirect()->route('comics.show', $comic->id);
     }
 
     /**
