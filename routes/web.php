@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('comics.index');
-});
+// Route::get('/', function () {
+//     return view('comics.index');
+// });
 
 Route::resource('comics', 'ComicController');
