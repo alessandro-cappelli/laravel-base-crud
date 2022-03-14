@@ -26,7 +26,11 @@
                         <td>{{ $comic->series }}</th>
                         <td>{{ $comic->sale_date }}</th>
                         <td>{{ $comic->type }}</th>
-                        <td><a href="{{route('comics.show', $comic->id)}}"><button type="button" class="btn btn-primary">vedi</button></a></th>
+                        <td>
+                            <a href="{{route('comics.show', $comic->id)}}"><button type="button" class="btn btn-primary">vedi</button></a>
+                            <a href="{{route('comics.edit', $comic->id)}}"><button type="button" class="btn btn-warning">edit</button></a>
+                        </th>
+
                     </tr>
                 @endforeach
             </tbody>
