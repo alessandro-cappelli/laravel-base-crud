@@ -6,7 +6,7 @@
     <div class="container">
         <h1>Aggiungi Fumetto {{$comic->title}}</h1>
         
-        <form action="{{route("comics.store")}}" method="POST">
+        <form action="{{route("comics.update", $comic->id)}}" method="POST">
 
             @csrf
             @method('PUT')

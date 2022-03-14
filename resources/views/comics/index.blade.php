@@ -29,6 +29,11 @@
                         <td>
                             <a href="{{route('comics.show', $comic->id)}}"><button type="button" class="btn btn-primary">vedi</button></a>
                             <a href="{{route('comics.edit', $comic->id)}}"><button type="button" class="btn btn-warning">edit</button></a>
+                            <form action="{{route("comics.destroy", $comic->id)}}" method="POST">
+                                @csrf
+                                @method("DELETE")
+                                <button type="submit" class="btn btn-danger">X</button>
+                            </form>
                         </th>
                     </tr>
                 @endforeach
